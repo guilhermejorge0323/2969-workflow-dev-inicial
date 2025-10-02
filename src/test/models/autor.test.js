@@ -34,7 +34,7 @@ describe('Testando o modelo Autor', () => {
     );
   });
 
-  it('Deve fazer uma chamada simulada ao BD', () => {
+  it('Deve fazer uma chamada simulada ao Banco de dados', () => {
     const autor = new Autor(objetoAutor);
 
     autor.salvar = jest.fn().mockReturnValue({
